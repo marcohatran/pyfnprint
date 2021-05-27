@@ -151,6 +151,7 @@ if __name__ == "__main__":
     # create templates
     train_fnps = sorted(fpimage.readFolder(path.join(root, 'train', '*')))
     for i in range(0, len(train_fnps)):
+        print(train_fnps[i])
         print('[', i + 1, '/', len(train_fnps), '] Enrolling ',
             train_fnps[i].fppath, '...', sep='')
 
